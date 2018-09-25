@@ -65,8 +65,7 @@ holiday_hash.each do |season, holiday|
   season.each do |holiday, supplies|
     holiday.each do |holiday_name|
       holiday_name.to_s 
-      holiday_name.split
-      holiday_name.capitalize!
+      holiday_name.split.capitalize!
       holiday_name.join 
       puts "#{holiday_name}:"
     end 
